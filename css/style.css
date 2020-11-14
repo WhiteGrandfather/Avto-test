@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Evolventa";
+  src:
+    url("../fonts/Evolventa-Bold.woff2") format("woff2"),
+    url("../fonts/Evolventa-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo__outer-ring {
+  position: relative;
+  width: 82px;
+  height: 82px;
+  background-color: #261f0f;
+  border-radius: 50%;
+}
+
+.logo__inner-ring {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  width: 49px;
+  height: 49px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo__inner-triangle {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  border: 30px solid transparent;
+  border-left: none;
+  border-right: 45px solid#ffffff;
+  border-radius: 100%;
+}
+
+.logo__inner-triangle--small {
+  border-width: 26px;
+  border-right: 40px solid #00adff;
+}
+
+.logo__text-wrpper {
+  padding-top: 3px;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 9px;
+  width: 200px;
+}
+
+.logo__text {
+  align-self: center;
+  margin: 0;
+  font-family: "Evolventa", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 2.15px;
+  text-transform: uppercase;
+}
+
+.logo__text--bottom {
+  padding-top: 2px;
+  color: #00adff;
+}
+
+.logo__text--small {
+  width: 60px;
+  margin-left: 3px;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: initial;
+  color: #6e6b64;
+}
